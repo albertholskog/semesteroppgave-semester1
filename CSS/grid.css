@@ -1,4 +1,4 @@
-.grid-parent {
+/* .grid-parent {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -16,4 +16,28 @@
 }
 .img-4-main-box {
   grid-area: 3 / 1 / 4 / 3;
+}
+ */
+
+.grid-parent {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "one two"
+    "one three"
+    "four four";
+}
+
+.img-1-main-box {
+  grid-area: one;
+}
+.img-2-main-box {
+  grid-area: two;
+}
+.img-3-main-box {
+  grid-area: three;
+}
+.img-4-main-box {
+  grid-area: four;
 }

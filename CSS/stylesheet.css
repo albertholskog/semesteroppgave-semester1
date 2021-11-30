@@ -20,7 +20,6 @@
 }
 body {
   font-family: roboto;
-
   background-color: var(--darkgrey);
 }
 main {
@@ -31,21 +30,24 @@ main {
   min-width: 40vw;
   min-height: 70vh;
   background-repeat: no-repeat;
-  
- 
+  background-size: cover;
+  background-position: center;
 }
 .img-2-main-box {
   background-image: url("../Img/stort-rom.jpg");
-
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .img-3-main-box {
   background-image: url("../Img/vr.jpg");
-
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .img-4-main-box {
   background-image: url("../Img/folk-som\ jobber.jpg");
-
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

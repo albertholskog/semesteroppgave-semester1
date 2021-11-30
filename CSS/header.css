@@ -13,7 +13,14 @@ header div {
 
 ul {
   list-style: none;
+  /* position: absolute; */
 }
+header a {
+  font-family: AGENCYB;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+/* hamburger- meny */
 nav {
   display: none;
 }
