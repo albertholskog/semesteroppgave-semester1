@@ -1,49 +1,38 @@
 .grid-parent {
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "one "
+    "two"
+    "three"
+    "four";
+}
+
+.card-one {
+  grid-area: one;
+}
+.card-two {
+  grid-area: two;
+}
+.card-three {
+  grid-area: three;
+}
+.card-four {
+  grid-area: four;
+}
+
+@media screen and (min-width: 880px) {
+  .grid-parent {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-        "one "
-        "two"
-        "three"
-        "four";
-}
-
-.img-1-main-box {
-    grid-area: one;
-}
-.img-2-main-box {
-    grid-area: two;
-}
-.img-3-main-box {
-    grid-area: three;
-}
-.img-4-main-box {
-    grid-area: four;
-}
-
-@media screen and (min-width: 1000px) {
-    .grid-parent {
-        display: grid;
-        gap: 1.5rem;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "one two"
-            "one three"
-            "four four";
-    }
-
-    .img-1-main-box {
-        grid-area: one;
-    }
-    .img-2-main-box {
-        grid-area: two;
-    }
-    .img-3-main-box {
-        grid-area: three;
-    }
-    .img-4-main-box {
-        grid-area: four;
-    }
+      "one two"
+      "one three"
+      "four four";
+  }
+  main {
+    margin: 5%;
+  }
 }

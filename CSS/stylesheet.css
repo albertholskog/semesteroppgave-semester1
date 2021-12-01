@@ -23,31 +23,38 @@ body {
   background-color: var(--darkgrey);
 }
 main {
-  padding: 4rem;
+  padding: 4rem 0;
 }
-.img-1-main-box {
+/* main page */
+h1,
+h2 {
+  position: relative;
+  top: 20px;
+  left: 10px;
+  font-size: 1, 1rem;
+  color: var(--blue-green);
+}
+.card-one {
   background-image: url("../Img/AI.jpg");
-  min-width: 40vw;
-  min-height: 70vh;
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
+  min-height: 300px;
 }
-.img-2-main-box {
+.card-two {
   background-image: url("../Img/stort-rom.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
-.img-3-main-box {
+.card-three {
   background-image: url("../Img/vr.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
-.img-4-main-box {
+.card-four {
   background-image: url("../Img/folk-som\ jobber.jpg");
+}
+.card-two,
+.card-three,
+.card-four {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: min(80vw, 300px);
 }

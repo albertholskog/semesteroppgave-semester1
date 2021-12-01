@@ -1,12 +1,36 @@
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   background-color: var(--blue-green);
-  
+  min-height: 10vh;
 }
-footer div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+
+.form-footer {
+  margin: 0.5rem 1rem 1rem 0;
+}
+.form-footer h3 {
+  color: var(--orange);
+  text-align: center;
+}
+input,
+button {
+  width: 100%;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+}
+input {
+  margin: 5px 0 10px;
+  font-size: 1rem;
+}
+button {
+  color: var(--orange);
+  background-color: var(--blue-green);
+  border: 2px solid var(--lightgrey);
+  font-size: 1.2rem;
+}
+footer p {
+  font-size: 1.2rem;
+  color: var(--lightgrey);
 }

@@ -1,31 +1,36 @@
 header {
-    background-color: var(--blue-green);
+  background-color: var(--blue-green);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 header img {
-    width: min(50vw, 250px);
+  width: min(80vw, 250px);
+  /* margin: 1rem; */
 }
-
-.nav-list {
-    text-align: center;
+.conteiner-logo {
+  padding: 1.5rem 0 1rem 2rem;
 }
-
 header a {
-    font-family: AGENCYB;
-    font-weight: bold;
-    font-size: 1.1rem;
+  font-family: AGENCYB;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 .fa-bars {
-    position: relative;
-    margin-right: 4rem;
+  position: relative;
+  margin-right: 4rem;
 }
 li a {
-    text-decoration: none;
-    color: var(--lightgrey);
+  text-decoration: none;
+  color: var(--lightgrey);
+  margin: 0 2rem;
 }
 li {
-    text-decoration: none;
-    display: inline-block;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1rem 0rem;
 }
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
