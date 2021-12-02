@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Science museum website kids classtrip" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/CSS/grid.css" />
+    <link rel="stylesheet" href="/CSS/header.css" />
+    <link rel="stylesheet" href="/CSS/footer.css" />
+    <link rel="stylesheet" href="/CSS/stylesheet.css" />
+    <title>the community science museum main page</title>
+  </head>
+  <body>
+    <header>
+      <div class="conteiner-logo">
+        <a href="/index.html"
+          ><img
+            src="/Img/logo-stor-hvit.png"
+            alt="logo-stor-hvit the community science museum"
+        /></a>
+      </div>
+      <div class="nav-list">
+        <nav>
+          <ul>
+            <li><a href="/HTML/Exhibition.html">Exhibition</a></li>
+            <li><a href="/HTML/events.html">Events</a></li>
+            <li><a href="/HTML/about.html">About Us</a></li>
+            <li><a href="/HTML/get-involved.html">Get Involved</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1>Get Involved</h1>
+      <section class="grid-get-involved">
+        <section>
+          <div>
+            <h2>Support us</h2>
+            <p>
+              There are various ways you can support the museum. Donations are
+              very welcome and are an important way we keep this museum open and
+              accessible to the whole community. You can also support us by
+              donating items of interest to the museum’s collections. If you
+              have some item or collection that you think others would enjoy,
+              please let us know by contacting our Collections Department and
+              they will be able to assist you.
+            </p>
+          </div>
+          <form action="#">
+            <label for="number"> Donations</label>
+            <input
+              type="number"
+              id="number"
+              name="number"
+              min="1"
+              max="100000"
+              placeholder="$"
+            />
+            <label for="cardnumber">Card Number</label>
+            <input
+              type="text"
+              id="cardnumber"
+              name="cardnumber"
+              placeholder="1111-2222-3333-4444"
+            />
+            <label for="fullname">Full name</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Full name"
+            />
+            <div>
+              <label for="expiry-date">Expiry date</label>
+              <input
+                type="expiry-date"
+                id="expiry-date"
+                name="expiry-date"
+                placeholder="mm/yy"
+              />
+              <label for="cvc">CVC</label>
+              <input
+                type="number"
+                id="cvc"
+                name="cvc"
+                min="111"
+                max="999"
+                placeholder="256"
+              />
+            </div>
+            <input type="submit" value="submit" />
+          </form>
+        </section>
+        <section></section>
+      </section>
+    </main>
+  </body>
+</html>
