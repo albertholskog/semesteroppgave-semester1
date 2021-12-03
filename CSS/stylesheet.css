@@ -20,14 +20,20 @@
 }
 body {
   font-family: roboto;
-  background-color: var(--darkgrey);
+  background-color: var(--lightgrey);
 }
 main {
   padding: 4rem 0;
 }
 /* main page */
-h1,
-h2 {
+.grid-parent h1 {
+  position: relative;
+  top: 20px;
+  left: 10px;
+  font-size: 1, 1rem;
+  color: var(--blue-green);
+}
+.grid-parent h2 {
   position: relative;
   top: 20px;
   left: 10px;
@@ -57,4 +63,80 @@ h2 {
   background-position: center;
   background-size: cover;
   height: min(80vw, 300px);
+}
+
+/* Get involved */
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.wrapper-container-get {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+  padding: 5rem 0;
+  max-width: 700px;
+  box-shadow: 7px 13px 10px var(--blue-green);
+  border-radius: 20px;
+  background-color: var(--darkgrey);
+}
+.box-get {
+  width: 310px;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-exp-cvc {
+  justify-content: space-evenly;
+  display: flex;
+  column-gap: 10px;
+}
+.wrapper-exp-cvc div {
+  flex: 1;
+}
+.box-get h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.box-get p {
+  max-width: 100%;
+  color: var(--blue-green);
+  font-size: 1.1rem;
+}
+.box-get label {
+  font-size: 1, 1rem;
+}
+.box-get input {
+  max-width: 310px;
+  background: transparent;
+  border: 2px solid var(--blue-green);
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-bottom: 3px solid var(--blue-green);
+  border-radius: 5px;
+}
+.box-get label {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.btc-get {
+  max-width: 150px;
+  margin: auto;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--lightgrey);
+  border: 2px solid var(--blue-green);
+  color: var(--blue-green);
+  margin-top: 1rem;
+  padding: 1rem;
 }

@@ -35,4 +35,18 @@
   main {
     margin: 5%;
   }
+
+  .grid-get-involved{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "one two"
+    ;
+  }
+  .grid-get-involved :nth-child(1)
+  grid-area: one;
+
+.grid-get-involved :nth-child(2)
+  grid-area: two;
 }

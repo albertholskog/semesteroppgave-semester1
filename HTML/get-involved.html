@@ -40,20 +40,22 @@
     <main>
       <h1>Get Involved</h1>
       <section class="grid-get-involved">
-        <section>
-          <div>
+        <section class="wrapper-container-get">
+          <div class="box-get">
             <h2>Support us</h2>
             <p>
               There are various ways you can support the museum. Donations are
               very welcome and are an important way we keep this museum open and
               accessible to the whole community. You can also support us by
-              donating items of interest to the museum’s collections. If you
-              have some item or collection that you think others would enjoy,
-              please let us know by contacting our Collections Department and
-              they will be able to assist you.
+              donating items of interest to the museum’s collections.
+            </p>
+            <p>
+              If you have some item or collection that you think others would
+              enjoy, please let us know by contacting our Collections Department
+              and they will be able to assist you.
             </p>
           </div>
-          <form action="#">
+          <form class="box-get" action="#">
             <label for="number"> Donations</label>
             <input
               type="number"
@@ -77,28 +79,72 @@
               name="fullname"
               placeholder="Full name"
             />
-            <div>
-              <label for="expiry-date">Expiry date</label>
-              <input
-                type="expiry-date"
-                id="expiry-date"
-                name="expiry-date"
-                placeholder="mm/yy"
-              />
-              <label for="cvc">CVC</label>
-              <input
-                type="number"
-                id="cvc"
-                name="cvc"
-                min="111"
-                max="999"
-                placeholder="256"
-              />
+            <div class="wrapper-exp-cvc">
+              <div>
+                <label for="expiry-date">Expiry date</label>
+                <input
+                  type="text"
+                  id="expiry-date"
+                  name="expiry-date"
+                  placeholder="mm/yy"
+                />
+              </div>
+              <div>
+                <label for="cvc">CVC</label>
+                <input
+                  type="number"
+                  id="cvc"
+                  name="cvc"
+                  min="111"
+                  max="999"
+                  placeholder="256"
+                />
+              </div>
             </div>
+            <button class="btc-get">Support Us</button>
+          </form>
+        </section>
+        <section class="wrapper-container-get">
+          <div class="box-get">
+            <h2>Volunteer</h2>
+            <p>
+              A number of people volunteer their time and effort to keep the
+              displays in good order and ready for visitors to come and enjoy.
+              Volunteering has its perks including getting to see behind the
+              scenes of a working museum, access to staff-only lectures, and a
+              monthly lunch where all staff and volunteers come together to
+              discuss ideas for future exhibits and strategies for the museum.
+              You can help volunteer in a number of different spheres. Please
+              contact us if you’d like to find out more about how you can get
+              involved.
+            </p>
+          </div>
+          <form class="box-get" action="#">
+            <label for="fullname">Full name</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Full name"
+            />
+            <label for="fullname">Full name</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Full name"
+            />
+            <label for="info">Tell us a little about you </label>
+            <textarea
+              name="info"
+              id="info"
+              cols="30"
+              rows="10"
+              placeholder="Tell us a little about you"
+            ></textarea>
             <input type="submit" value="submit" />
           </form>
         </section>
-        <section></section>
       </section>
     </main>
   </body>
