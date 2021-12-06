@@ -22,9 +22,9 @@ body {
   font-family: roboto;
   background-color: var(--lightgrey);
 }
-main {
-  padding: 4rem 0;
-}
+/* main {
+  width: 90vw;
+} */
 /* main page */
 .grid-parent h1 {
   position: relative;
@@ -68,15 +68,13 @@ main {
 /* Get involved */
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   font-weight: bold;
   letter-spacing: 1px;
 }
-
 .wrapper-container-get {
   display: flex;
-
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -117,8 +115,6 @@ h1 {
 }
 .box-get input {
   max-width: 310px;
-  background: transparent;
-  border: 2px solid var(--blue-green);
   background: rgba(0, 0, 0, 0.2);
   border: none;
   border-bottom: 3px solid var(--blue-green);
@@ -139,4 +135,49 @@ h1 {
   color: var(--blue-green);
   margin-top: 1rem;
   padding: 1rem;
+}
+.box-get textarea {
+  background-color: var(--darkgrey);
+  border: 2px solid var(--blue-green);
+  border-radius: 5px;
+}
+
+/* --------------------------- events page------------------------ */
+
+.titles {
+  font-size: 2rem;
+  font-weight: bolder;
+  padding-left: 2rem;
+}
+.box-programs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.box-programs img {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  max-width: 100%;
+}
+.wrapper-programs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.wrapper-programs p {
+  padding: 0 1rem;
+}
+.form-morebutten {
+  border: 2px solid var(--blue-green);
+  border-radius: 1rem;
+  background-color: transparent;
+  padding: 0 1rem;
+}
+.form-morebutten button {
+  background-color: transparent;
 }
