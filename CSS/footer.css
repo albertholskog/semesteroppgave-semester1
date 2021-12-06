@@ -4,6 +4,7 @@ footer {
   align-items: center;
   background-color: var(--blue-green);
   min-height: 10vh;
+  margin-top: 4rem;
 }
 
 .form-footer {

@@ -18,6 +18,7 @@
   --darkgrey: #afb8be;
   --lightgrey: #e1e1e1;
 }
+
 body {
   font-family: roboto;
   background-color: var(--lightgrey);
@@ -26,22 +27,18 @@ body {
   width: 90vw;
 } */
 /* main page */
+
+.grid-parent h2,
 .grid-parent h1 {
   position: relative;
-  top: 20px;
-  left: 10px;
-  font-size: 1, 1rem;
-  color: var(--blue-green);
-}
-.grid-parent h2 {
-  position: relative;
+  display: inline;
   top: 20px;
   left: 10px;
   font-size: 1, 1rem;
   color: var(--blue-green);
 }
 .card-one {
-  background-image: url("../Img/AI.jpg");
+  background-image: url("../Img/ai-liten.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -67,18 +64,21 @@ body {
 
 /* Get involved */
 
-h1 {
-  font-size: 3rem;
+.titles-h1,
+.titles-prog {
+  font-size: 2rem;
   text-align: center;
   font-weight: bold;
   letter-spacing: 1px;
+  margin-bottom: 2rem;
 }
 .wrapper-container-get {
   display: flex;
   justify-content: center;
+
   align-items: center;
   flex-wrap: wrap;
-  margin: 3rem 0;
+
   padding: 5rem 0;
   max-width: 700px;
   box-shadow: 7px 13px 10px var(--blue-green);
@@ -145,23 +145,28 @@ h1 {
 /* --------------------------- events page------------------------ */
 
 .titles {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bolder;
   padding-left: 2rem;
 }
+
 .box-programs {
   display: flex;
+  justify-content: center;
+
   flex-direction: column;
   row-gap: 1rem;
-  margin-bottom: 2rem;
 }
-
 .box-programs img {
   object-fit: cover;
   object-position: center;
   overflow: hidden;
-  max-width: 100%;
+  max-width: 800px;
+  max-height: 500px;
+  width: 100%;
+  height: 100%;
 }
+
 .wrapper-programs {
   display: flex;
   flex-direction: column;
