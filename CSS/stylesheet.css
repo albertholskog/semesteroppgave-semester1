@@ -186,3 +186,78 @@ body {
 .form-morebutten button {
   background-color: transparent;
 }
+
+/* ----------------Exhibition info---------- */
+.box-bigone {
+  max-height: 100%;
+}
+.box-bigtwo {
+  max-height: 100%;
+}
+.box-bigone img,
+.box-bigtwo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+}
+.ex-info,
+.trip-info {
+  padding: 0 1rem;
+}
+.ex-info h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.trip-info p,
+.ex-info p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+.trip-info h2 {
+  font-size: 1.5rem;
+}
+.form-classtrip {
+  max-width: 200px;
+  border-radius: 1rem;
+  border: 2px solid var(--blue-green);
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
+.form-classtrip button {
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--blue-green);
+}
+
+/* -------------about us----------------- */
+
+.big-building img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+}
+.grid-about h1,
+.grid-about h2 {
+  font-size: 1.7rem;
+}
+.grid-about p {
+  font-size: 1.1;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+.grid-about i {
+  font-size: 2rem;
+  padding: 1rem;
+}
+.grid-about :nth-child(1),
+.grid-about :nth-child(2),
+.grid-about :nth-child(3),
+.grid-about :nth-child(4) {
+  padding: 0 1rem;
+}
