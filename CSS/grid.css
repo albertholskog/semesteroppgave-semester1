@@ -9,20 +9,18 @@
     "three"
     "four";
 }
-
-.card-one {
+.grid-parent :nth-child(1) {
   grid-area: one;
 }
-.card-two {
+.grid-parent :nth-child(2) {
   grid-area: two;
 }
-.card-three {
+.grid-parent :nth-child(3) {
   grid-area: three;
 }
-.card-four {
+.grid-parent :nth-child(4) {
   grid-area: four;
 }
-
 /* ------------exhibition-info------------ */
 .grid-exhibition-info {
   display: grid;
@@ -77,6 +75,17 @@
 }
 
 @media screen and (min-width: 500px) {
+  .grid-parent {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "one two"
+      "three three"
+      "four four";
+  }
+
   .grid-exhibition-info {
     display: grid;
     gap: 1.5rem;
@@ -84,8 +93,8 @@
     grid-template-columns: 50% 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
-      "one one two"
-      "one one two"
+      "one two"
+      "one  two"
       "three  four";
   }
   .grid-about {
@@ -110,6 +119,15 @@
       "one two"
       "one three"
       "four four";
+  }
+  .card-one,
+  .card-two,
+  .card-three,
+  .card-four {
+    border-radius: 1rem;
+  }
+  .grid-parent .card-one {
+    background-position: top;
   }
 
   /* ------------get involved---------- */
@@ -157,10 +175,9 @@
     display: grid;
     gap: 1.5rem;
     margin: 0 5vw;
-    grid-template-columns: 1fr 1fr 2fr;
-    grid-template-rows: 1fr 1fr 0.8fr;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-rows: auto;
     grid-template-areas:
-      "one one two"
       "one one two"
       "three four two";
   }

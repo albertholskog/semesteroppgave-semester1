@@ -1,0 +1,11 @@
+@media screen and (min-width: 880px) {
+  .card-one,
+  .card-two,
+  .card-three,
+  .card-four {
+    border-radius: 1rem;
+  }
+  .card-one {
+    background-position: top;
+  }
+}
