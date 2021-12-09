@@ -9,3 +9,17 @@
     background-position: top;
   }
 }
+
+/* background-clip: text;
+  color: transparent; */
+/* background-size: 300%;
+  animation: htitles 20s infinite alternate; */
+
+/* @keyframes htitles {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+} */
