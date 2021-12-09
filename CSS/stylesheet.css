@@ -5,11 +5,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 @font-face {
-  font-family: "roboto", sans-serif;
-  src: url(/font/Roboto-Bold.ttf) format("truetype");
-  src: url(/font/Roboto-Regular.ttf) format("truetype");
-  src: url(/font/AGENCYB.TTF) format("truetype");
+  font-family: "AGENCYR";
+  src: url(/font/AGENCYR.TTF) format("truetype"),
+    url(/font/AGENCYR.woff2) format("woff2");
 }
 
 :root {
@@ -22,7 +22,8 @@ html {
   height: 100%;
 }
 body {
-  font-family: roboto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   background-color: var(--lightgrey);
   display: flex;
   flex-direction: column;
@@ -38,8 +39,15 @@ body {
   top: 30px;
   left: 10px;
   font-size: 2rem;
-  font-weight: 900;
+  font-weight: 700;
   color: var(--blue-green);
+  background-color: rgba(230, 233, 236, 0.356);
+  border-radius: 1rem;
+  padding: 5px;
+}
+.grid-parent h2:hover,
+.grid-parent h1:hover {
+  color: var(--orange);
 }
 .grid-parent a {
   text-decoration: none;
@@ -74,12 +82,11 @@ body {
   cursor: pointer;
 }
 
-/* Get involved */
+/* ------------------------Get involved----------------------- */
 .titles-info,
 .titles-get,
 .titles-prog {
   font-size: 2.2rem;
-  font-family: AGENCYB;
   text-align: center;
   font-weight: bold;
   letter-spacing: 1px;
@@ -116,7 +123,7 @@ body {
 }
 .box-get h2 {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
   margin: 1rem 0;
 }
 .box-get p {
@@ -124,9 +131,7 @@ body {
   color: var(--blue-green);
   font-size: 1.1rem;
 }
-.box-get label {
-  font-size: 1, 1rem;
-}
+
 .box-get input {
   max-width: 310px;
   background: rgba(83, 106, 136, 0.2);
@@ -136,8 +141,9 @@ body {
 }
 .box-get label {
   font-size: 1.1rem;
-  font-weight: bold;
+  font-weight: 500;
 }
+
 .btc-get {
   max-width: 150px;
   margin: auto;
@@ -150,6 +156,10 @@ body {
   margin-top: 1rem;
   padding: 1rem;
 }
+.btc-get:hover {
+  color: var(--orange);
+  background-color: var(--blue-green);
+}
 .box-get textarea {
   background-color: var(--darkgrey);
   border: 2px solid var(--blue-green);
@@ -161,36 +171,30 @@ body {
 
 .titles {
   font-size: 1.5rem;
-  font-weight: bolder;
+  font-weight: 700;
   padding-left: 2rem;
+  margin-bottom: 1rem;
 }
 
-.box-programs {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  row-gap: 1rem;
-  width: 100%;
-}
 .box-programs img {
   object-fit: cover;
   object-position: center;
-  overflow: hidden;
-  max-width: 800px;
-  max-height: 500px;
+  max-height: 400px;
   width: 100%;
-  height: 100%;
 }
+
 .wrapper-programs {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  min-height: 150px;
   margin-bottom: 1rem;
 }
 .wrapper-programs p {
   padding: 0 1rem;
+  margin-top: 1rem;
   max-width: 90%;
   min-height: 5rem;
 }
@@ -206,8 +210,11 @@ body {
   color: var(--lightgrey);
   cursor: pointer;
 }
+.form-morebutten button:hover {
+  color: var(--orange);
+}
 
-/* ----------------Exhibition info---------- */
+/* ----------------programs info page---------- */
 .box-bigone {
   max-height: 600px;
   width: 100%;
@@ -260,6 +267,7 @@ body {
 .big-building img {
   width: 100%;
   height: 100%;
+  max-height: 450px;
   object-fit: cover;
   object-position: center;
   border-radius: 1rem;
