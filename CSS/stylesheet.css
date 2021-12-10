@@ -5,13 +5,11 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 @font-face {
   font-family: "AGENCYR";
   src: url(/font/AGENCYR.TTF) format("truetype"),
     url(/font/AGENCYR.woff2) format("woff2");
 }
-
 :root {
   --blue-green: #072931;
   --orange: #e97020;
@@ -29,9 +27,7 @@ body {
   flex-direction: column;
   min-height: 100%;
 }
-
-/* main page */
-
+/* -----------------------------------------main page-------------------------- */
 .grid-parent h2,
 .grid-parent h1 {
   position: relative;
@@ -52,7 +48,6 @@ body {
 .grid-parent a {
   text-decoration: none;
 }
-
 .card-one {
   background-image: url("../Img/ai-liten.jpg");
   background-repeat: no-repeat;
@@ -81,14 +76,13 @@ body {
   height: min(80vw, 300px);
   cursor: pointer;
 }
-
 /* ------------------------Get involved----------------------- */
 .titles-info,
 .titles-get,
 .titles-prog {
   font-size: 2.2rem;
   text-align: center;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 2rem;
 }
@@ -112,7 +106,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 .wrapper-exp-cvc {
   justify-content: space-evenly;
   display: flex;
@@ -131,7 +124,6 @@ body {
   color: var(--blue-green);
   font-size: 1.1rem;
 }
-
 .box-get input {
   max-width: 310px;
   background: rgba(83, 106, 136, 0.2);
@@ -143,13 +135,12 @@ body {
   font-size: 1.1rem;
   font-weight: 500;
 }
-
 .btc-get {
   max-width: 150px;
   margin: auto;
   border-radius: 1rem;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 600;
   background-color: var(--lightgrey);
   border: 2px solid var(--blue-green);
   color: var(--blue-green);
@@ -166,23 +157,19 @@ body {
   border-radius: 5px;
   max-height: 140px;
 }
-
 /* --------------------------- programs page------------------------ */
-
 .titles {
   font-size: 1.5rem;
   font-weight: 700;
   padding-left: 2rem;
   margin-bottom: 1rem;
 }
-
 .box-programs img {
   object-fit: cover;
   object-position: center;
   max-height: 400px;
   width: 100%;
 }
-
 .wrapper-programs {
   display: flex;
   flex-direction: column;
@@ -213,36 +200,37 @@ body {
 .form-morebutten button:hover {
   color: var(--orange);
 }
-
 /* ----------------programs info page---------- */
 .box-bigone {
-  max-height: 600px;
   width: 100%;
 }
 .box-bigtwo {
-  max-width: 700px;
-  max-height: 900px;
+  width: 100%;
 }
 .box-bigone img,
 .box-bigtwo img {
   width: 100%;
   height: 100%;
+  max-height: 700px;
   object-fit: cover;
   object-position: center;
-  border-radius: 1rem;
 }
 .ex-info,
 .trip-info {
   padding: 0 1rem;
 }
+article {
+  justify-self: center;
+  align-self: center;
+}
 .ex-info h1 {
   font-size: 2rem;
-  font-weight: bolder;
+  font-weight: 500;
 }
 .trip-info p,
 .ex-info p {
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 400;
   margin: 1rem 0;
 }
 .trip-info h2 {
@@ -250,20 +238,22 @@ body {
 }
 .form-classtrip {
   max-width: 200px;
-  border-radius: 1rem;
-  border: 2px solid var(--blue-green);
   margin-top: 1rem;
-  padding: 1rem 0;
 }
 .form-classtrip button {
-  background-color: transparent;
+  border-radius: 1rem;
+  border: 2px solid var(--blue-green);
+  padding: 0.5rem;
+  background-color: var(--darkgrey);
   font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--blue-green);
+  font-weight: 700;
+  cursor: pointer;
 }
-
+.form-classtrip button:hover {
+  color: var(--orange);
+  background-color: var(--blue-green);
+}
 /* -------------about us----------------- */
-
 .big-building img {
   width: 100%;
   height: 100%;
@@ -277,7 +267,7 @@ body {
   font-size: 1.7rem;
 }
 .grid-about p {
-  font-size: 1.1;
+  font-size: 1.1rem;
   font-weight: 500;
   margin: 1rem 0;
 }

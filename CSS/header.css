@@ -19,8 +19,8 @@ header img {
 }
 .nav-list a {
   font-family: AGENCYR;
-  font-weight: bold;
-  font-size: 1.5rem;
+  font-weight: 700;
+  font-size: 2rem;
   text-decoration: none;
   color: var(--lightgrey);
   margin: 0 1rem;
