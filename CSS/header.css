@@ -5,7 +5,7 @@ header {
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
-  margin-bottom: 4rem;
+  margin-bottom: 64px;
 }
 .nav-list ul {
   display: flex;
@@ -15,7 +15,7 @@ header img {
   width: min(80vw, 250px);
 }
 .conteiner-logo {
-  padding: 1.5rem 0 1rem 2rem;
+  padding: 24px 0 16px 32px;
 }
 .nav-list a {
   font-family: AGENCYR;
@@ -23,7 +23,7 @@ header img {
   font-size: 2rem;
   text-decoration: none;
   color: var(--lightgrey);
-  margin: 0 1rem;
+  margin: 0 16px;
 }
 .nav-list a:hover {
   color: var(--orange);
@@ -31,11 +31,15 @@ header img {
 li {
   text-decoration: none;
   display: inline-block;
-  margin: 1rem 0rem;
+  margin: 16px 0rem;
 }
 ul {
   list-style-type: none;
 }
+nav .nav-link-color {
+  color: var(--orange);
+}
+
 @media screen and (min-width: 450px) {
   .nav-list ul {
     flex-direction: row;
@@ -43,11 +47,11 @@ ul {
 }
 @media screen and (min-width: 700px) {
   .nav-list a {
-    margin: 0 2rem;
+    margin: 0 32px;
   }
 }
 @media screen and (min-width: 1000px) {
   .nav-list a {
-    margin: 0 3rem;
+    margin: 0 48px;
   }
 }
