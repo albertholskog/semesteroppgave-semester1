@@ -33,6 +33,27 @@ p {
   font-size: 1.1rem;
   color: var(--blue-green);
 }
+
+/* ----------------------button-------------------------*/
+
+button {
+  color: var(--lightgrey);
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: 2px solid var(--blue-green);
+  border-radius: 16px;
+  background-color: var(--blue-green);
+  padding: 0 16px;
+  cursor: pointer;
+  padding: 10px;
+}
+.btn-get {
+  max-width: 50%;
+  margin: 16px 0 0 50%;
+}
+button:hover {
+  color: var(--orange);
+}
 /* -----------------------------------------main page-------------------------- */
 .grid-parent h2,
 .grid-parent h1 {
@@ -43,7 +64,7 @@ p {
   font-size: 2rem;
   font-weight: 700;
   color: var(--blue-green);
-  background-color: rgba(230, 233, 236, 0.356);
+  background-color: rgba(230, 233, 236, 0.5);
   border-radius: 16px;
   padding: 5px;
 }
@@ -139,23 +160,6 @@ p {
   font-size: 1.1rem;
   font-weight: 500;
 }
-.btc-get {
-  max-width: 150px;
-  margin: auto;
-  border-radius: 16px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  background-color: var(--lightgrey);
-  border: 2px solid var(--blue-green);
-  color: var(--blue-green);
-  margin-top: 16px;
-  padding: 16px;
-  cursor: pointer;
-}
-.btc-get:hover {
-  color: var(--orange);
-  background-color: var(--blue-green);
-}
 .box-get textarea {
   background-color: var(--darkgrey);
   border: 2px solid var(--blue-green);
@@ -189,22 +193,6 @@ p {
   margin-top: 16px;
   max-width: 90%;
   min-height: 80px;
-}
-.form-morebutten {
-  border: 2px solid var(--blue-green);
-  border-radius: 16px;
-  background-color: var(--blue-green);
-  padding: 0 16px;
-  cursor: pointer;
-}
-.form-morebutten button {
-  background-color: transparent;
-  color: var(--lightgrey);
-  cursor: pointer;
-  font-size: 1.2rem;
-}
-.form-morebutten button:hover {
-  color: var(--orange);
 }
 /* ----------------programs info page---------- */
 .box-bigone {
@@ -243,19 +231,6 @@ article {
 .form-classtrip {
   max-width: 200px;
   margin-top: 16px;
-}
-.form-classtrip button {
-  border-radius: 16px;
-  border: 2px solid var(--blue-green);
-  padding: 8px;
-  background-color: var(--darkgrey);
-  font-size: 1.2rem;
-  font-weight: 700;
-  cursor: pointer;
-}
-.form-classtrip button:hover {
-  color: var(--orange);
-  background-color: var(--blue-green);
 }
 /* -------------about us----------------- */
 .big-building img {

@@ -6,6 +6,7 @@ header {
   align-items: baseline;
   flex-wrap: wrap;
   margin-bottom: 64px;
+  padding: 0 5vw;
 }
 .nav-list ul {
   display: flex;
@@ -15,7 +16,7 @@ header img {
   width: min(80vw, 250px);
 }
 .conteiner-logo {
-  padding: 24px 0 16px 32px;
+  padding-top: 16px;
 }
 .nav-list a {
   font-family: AGENCYR;
@@ -23,7 +24,6 @@ header img {
   font-size: 2rem;
   text-decoration: none;
   color: var(--lightgrey);
-  margin: 0 16px;
 }
 .nav-list a:hover {
   color: var(--orange);
@@ -40,18 +40,16 @@ nav .nav-link-color {
   color: var(--orange);
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 400px) {
   .nav-list ul {
     flex-direction: row;
+  }
+  .nav-list a {
+    margin-left: 2.5vw;
   }
 }
 @media screen and (min-width: 700px) {
   .nav-list a {
-    margin: 0 32px;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .nav-list a {
-    margin: 0 48px;
+    margin-left: 7vw;
   }
 }
