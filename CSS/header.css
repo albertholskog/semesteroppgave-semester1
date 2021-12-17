@@ -31,7 +31,7 @@ header img {
 li {
   text-decoration: none;
   display: inline-block;
-  margin: 16px 0rem;
+  margin: 16px 0;
 }
 ul {
   list-style-type: none;
@@ -39,7 +39,6 @@ ul {
 nav .nav-link-color {
   color: var(--orange);
 }
-
 @media screen and (min-width: 400px) {
   .nav-list ul {
     flex-direction: row;

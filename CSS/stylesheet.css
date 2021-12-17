@@ -27,15 +27,12 @@ body {
   flex-direction: column;
   min-height: 100%;
 }
-
 /* -------------typografi------------ */
 p {
   font-size: 1.1rem;
   color: var(--blue-green);
 }
-
 /* ----------------------button-------------------------*/
-
 button {
   color: var(--lightgrey);
   font-size: 1.2rem;
