@@ -25,7 +25,7 @@ This page was made whit:
 - HTML
 - CSS
 - XD
-- 
+
 ## Getting Started
 
 ### Installing
