@@ -11,8 +11,7 @@ The page is made to be able to book tours and to see which exhibiton the museum 
 The community science museum was an exam project we had the first year. 
 The task was to get young people and parents to take their kids to the museum. 
 The website is made to get people interested in the museum and what it has to offer.
-Website is built on vanilla html and css
-You can add some bullet points if you'd like to:
+Website is built on vanilla html and css.
 
 Things that were important for me to include in this assignment
 
